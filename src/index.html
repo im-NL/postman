@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTMANN | Task 1</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <script defer src="./js/animations.js"></script>
+    <script defer src="./js/scrollanimations.js"></script>
+    <script defer src="./js/hamburger.js"></script>
+</head>
+
+<body class="bg-back overflow-x-hidden overflow-y-auto">
+
+    <div id="hamburger-content" class="hidden justify-center items-center w-full h-[100vh]">
+            
+        <div class="flex flex-col sm:flex-row w-2/3 sm:items-end sm:justify-between sm:11/12 text-secondary-100">
+            <div class="md:text-8xl text-5xl font-heading">
+                <h1 class="text-primary-100 hamburger-text">work</h1>
+                <h1 class="text-primary-100 hamburger-text">about</h1>
+                <h1 class="text-primary-100 hamburger-text">services</h1>
+                <h1 class="text-primary-100 hamburger-text">team</h1>
+                <h1 class="text-primary-100 hamburger-text">contact</h1>
+            </div>
+
+            <div class="flex flex-col mt-10 md:text-right font-secondary text-2xl">
+                <div>
+                    hello@trionn.com
+                </div>
+                <div>
+                    +91 9824182099
+                </div>
+
+                <div class="flex mt-10">
+                    <img src="../assets/logos/dribble.svg" class="h-10">
+                    <img src="../assets/logos/linkedin.svg" class="h-10">
+                    <img src="../assets/logos/instagram.svg" class="h-10">
+                    <img src="../assets/logos/behance.svg" class="h-10">
+                    <img src="../assets/logos/facebook.svg" class="h-10">
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div
+        class="fixed z-10 top-0 left-0 w-[100vw] h-20 flex items-center font-heading justify-between sm:px-[7%] px-[5%]">
+
+        <div class="text-secondary-100 text-4xl">trionn</div>
+
+        <div class="flex fixed h-20 top-0 left-0 w-full justify-center items-center text-secondary-100">
+            <div> <img src="../assets/light-mode-icon.035572eb.svg" alt="light"> </div>
+            <div> <img src="../assets/sound-mute.99b17403.svg" alt="soud" class="h-6 w-6 bg-card"> </div>
+        </div>
+
+        <div class="flex justify-end items-center text-secondary-100 text-xl
+        z-20" id="hamburger" onclick="clicked()">
+            menu
+            <div class="h-12 w-12 rounded-full bg-[hsla(222,6%,67%,.2)] flex items-center justify-center"
+            >
+                <div class="flex items-end flex-col space-y-[0.3rem]">
+                    <span class="block w-6 h-[0.08rem] bg-secondary-100"></span>
+                    <span class="block w-4 h-[0.08rem] bg-secondary-100"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sm:px-[7%] px-[5%] mb-20">
+
+        <div class="h-[100vh] items-center relative flex flex-col justify-center">
+            <div class="text-secondary-100 font-heading text-center w-9/12 md:text-[8.25rem] text-5xl font-medium tracking-tight
+                        animate-hidden">
+                <p style="line-height: 75%;">roar in the <br>digital wilderness.</p>
+            </div>
+            <div class="text-center text-xs text-secondary-100 w-2/3 pt-6 uppercase md:w-1/2
+                        animate-hidden">
+                We roar with success, delivering the TRIONN <br>
+                through versatile design, branding and the latest <br>
+                tech development to companies.
+            </div>
+            <div class="flex justify-center pt-8">
+                <a class="animate-hidden">
+                    <img src="https://trionn.com/_next/static/media/move-down.31fd25f2.svg" class="opacity-35"
+                        alt="move-down" width="30px" height="30px">
+                </a>
+            </div>
+
+            <div class="absolute bottom-10 w-full grid grid-cols-2">
+
+                <div class="animate-hidden delayed relative font-sans">
+                    <div class="border-secondary-200 text-sm rounded-full border-2 text-secondary-200 w-fit
+                    sm:p-4 sm:px-8 px-5 p-2">
+                        Explore work
+                    </div>
+                </div>
+
+                <div class="animate-hidden delayed relative font-sans flex justify-end">
+                    <div class="border-secondary-200 text-sm rounded-full border-2 text-secondary-200 w-fit
+                    sm:p-4 sm:px-8 px-5 p-2">
+                        Get in touch
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- VIDEO -->
+        <div class="flex my-16 justify-center border rounded-full scaleup">
+            <video width="100%" height="100%" loop playsinline autoplay muted class="rounded-3xl">
+                <source src="../assets/videos/intro-video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="flex flex-row flex-grow w-full">
+
+            <!-- RECENT WORK section -->
+            <div class="sm:pt-48 pt-16">
+                <div class="sm:text-[10rem] text-7xl text-secondary-100 font-heading moveleft">
+                    <div style="line-height: 72%;"> <span> recent</span> <br>work</div>
+                </div>
+                <div class="text-secondary-100 sm:text-4xl text-2xl font-secondary w-9/12 sm:w-2/3
+                animate-hidden delay-100">
+                    <h1>In the creative wilderness, clients find out work truly beloved </h1>
+                </div>
+            </div>
+
+            <div class="pt-96 sm:flex items-end flex-grow w-2/3 justify-end hidden">
+                <div class="animate-hidden delayed">
+                    <div
+                        class="border-secondary-200 md:text-2xl text-base rounded-full border-4 text-secondary-200 p-5 px-12 w-fit">
+                        <span>Explore work</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- CARDS -->
+        <div class="flex sm:flex-row-reverse flex-col sm:h-[60vh] w-full pt-10">
+            <div class="sm:w-2/3 flex sm:justify-end justify-center loomimg">
+                <img src="../assets/images/loftloom-main-landscape.webp" alt="loftloom"
+                    class="sm:w-5/6 h-full rounded-3xl object-cover">
+            </div>
+            <div class="text-secondary-100 sm:w-1/3 w-full font-heading flex flex-col justify-center
+            items-center sm:items-start my-[10%]" id="loom">
+                <div class="sm:text-7xl text-5xl">
+                    <h1>loftloom</h1>
+                </div>
+                <div class="font-secondary text-xl sm:mb-[10%]">
+                    <p>UI Design, UX, Wireframe</p>
+                </div>
+                <div class="delaychildren relative font-sans">
+                    <div class="border-secondary-200 text-base rounded-full border-2 text-secondary-200 p-4 px-12 w-fit
+                            animate-hidden hidden sm:grid">
+                        View project
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- image on left card -->
+        <div class="flex flex-col sm:flex-row sm:h-[60vh] w-full my-[10%]">
+            <div class="sm:w-2/3 flex justify-start" id="imusicimg">
+                <img src="../assets/images/imusic-main-landscape.webp" alt="imusic"
+                    class="sm:w-5/6 h-full rounded-3xl object-cover">
+            </div>
+            <div class="text-secondary-100 sm:w-1/3 w-full font-heading flex flex-col 
+            justify-center sm:items-end items-center my-[10%] moveup">
+                <div class="sm:text-7xl text-5xl">
+                    <h1>imusic</h1>
+                </div>
+                <div class="font-secondary text-xl sm:mb-[10%]">
+                    <p> Research, UX, UI Design</p>
+                </div>
+                <div class="delaychildren relative font-sans">
+                    <div class="border-secondary-200 text-base rounded-full border-2 text-secondary-200 p-4 px-12 w-fit
+                            animate-hidden hidden sm:grid">
+                        View project
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex sm:flex-row-reverse flex-col sm:h-[60vh] w-full mb-[10%]">
+            <div class="sm:w-2/3 flex sm:justify-end justify-center" id="technisimg">
+                <img src="../assets/images/technis-main-landscape.webp" alt="technis"
+                    class="sm:w-5/6 h-full rounded-3xl object-cover">
+            </div>
+            <div class="text-secondary-100 sm:w-1/3 w-full font-heading flex flex-col justify-center
+            items-center sm:items-start my-[10%]" id="technis">
+                <div class="sm:text-7xl text-5xl">
+                    <h1>technis</h1>
+                </div>
+                <div class="font-secondary text-xl sm:mb-[10%]">
+                    <p>UX, UI Design, Development</p>
+                </div>
+                <div class="delaychildren relative font-sans">
+                    <div class="border-secondary-200 text-base rounded-full border-2 text-secondary-200 p-4 px-12 w-fit
+                            animate-hidden hidden sm:grid">
+                        View project
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- WHO WE ARE -->
+        <div class="pt-44">
+            <div class="sm:text-[10rem] text-8xl text-secondary-100 font-heading moveright">
+                <p style="line-height: 72%;">who <br>we are</p>
+            </div>
+            <div class="text-secondary-100 leading-8 font-secondary sm:text-5xl text-3xl sm:w-[55%] w-full mt-10
+            animate-hidden delay-200">
+                <p>As an award-winning agency within
+                    the digital jungle, TRIONN® transcends
+                    aesthetics, crafting your vision into a
+                    legacy that endures.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col flex-shrink items-end mt-10">
+            <div class="flex sm:w-1/3 flex-col">
+
+                <div class="text-lg font-secondary leading-6 text-secondary-100 animate-hidden delay-100">
+                    We roar with creativity, staying updated with the latest tech to make your brand a formidable
+                    force in the
+                    digital wilderness and deliver exceptional website and app experiences.
+                </div>
+
+                <div class="relative flex mt-10 font-sans sm:justify-end animate-hidden delayed">
+                    <div class="border-secondary-200 text-base rounded-full border-2 text-secondary-200
+                    md:p-4 md:px-12 px-8 p-3 w-fit">
+                        About us
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- STAT CARDS -->
+
+        <div class="w-full md:grid md:grid-cols-2 mt-32 flex-col">
+
+            <!-- first column -->
+            <div class="flex flex-col">
+
+                <!-- CARD -->
+                <div class="cardleft">
+
+                    <div class="grid grid-rows-2 w-full mb-5 text-secondary-100 rounded-3xl
+                    redhover h-[44vh] bg-card">
+                        <div class="flex md:items-end md:ml-16">
+                            <div class="text-9xl font-mono">
+                                <h1>50+</h1>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end items-end text-xl md:text-5xl m-10">
+                            <div class="w-2/3 text-right font-heading ">
+                                <p>awards & recognitions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardleft0">
+
+                    <div class="grid grid-rows-2 w-full mb-5 text-secondary-100 rounded-3xl
+                    greenhover h-[44vh] bg-card">
+                        <div class="flex md:items-end md:ml-16">
+                            <div class="text-9xl font-mono">
+                                <h1>20+</h1>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end items-end text-xl md:text-5xl m-10">
+                            <div class="w-2/3 text-right font-heading ">
+                                <p>creative minds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="flex flex-col sm:mt-48 md:ml-8 w-full justify-start">
+            
+            <div class="cardright">
+
+                <div class="grid grid-rows-2 w-full mb-5 text-secondary-100 rounded-3xl
+                whitehover h-[44vh] bg-card">
+                    <div class="flex md:items-end md:ml-16">
+                        <div class="text-9xl font-mono">
+                            <h1>900+</h1>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end items-end text-xl md:text-5xl m-10">
+                        <div class="w-2/3 text-right font-heading ">
+                            <p>projects completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardright0">
+
+                <div class="grid grid-rows-2 w-full mb-5 text-secondary-100 rounded-3xl
+                yellowhover h-[44vh] bg-card">
+                    <div class="flex md:items-end md:ml-16">
+                        <div class="text-9xl font-mono">
+                            <h1>20+</h1>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end items-end text-xl md:text-5xl m-10">
+                        <div class="w-2/3 text-right font-heading ">
+                            <p>years of experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- second column -->
+
+
+    </div>
+
+    <!-- PARTNER LOVE -->
+    <div class="pt-96">
+        <div class="flex flex-col sm:flex-row w-full">
+
+            <div class="md:text-[10rem] text-8xl text-secondary-100 font-heading
+            moveright0">
+                <p style="line-height: 72%;">partner<br>love</p>
+            </div>
+            <div class="flex w-full justify-end items-end">
+                <div class="text-secondary-100 text-2xl md:w-1/3 mt-10
+                animate-hidden delayed">
+                    <p>
+                        Take heed, as the
+                        lion's roar in our client
+                        reviews resounds.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- REVIEWS -->
+    <div class="w-full whitespace-nowrap overflow-scroll">
+
+        <div class="pl-5 snapper min-w-max flex">
+            <!-- card -->
+            <div class="h-[72vh] w-[400px] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
+                        class="w-40 h-40 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+
+                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
+                        <div class="flex items-center justify-center  text-sm">
+                            Watch now!
+                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
+                        class="w-40 h-40 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+
+                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
+                        <div class="flex items-center justify-center  text-sm">
+                            Watch now!
+                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
+                        class="w-40 h-40 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+
+                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
+                        <div class="flex items-center justify-center  text-sm">
+                            Watch now!
+                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
+                        class="w-40 h-40 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+
+                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
+                        <div class="flex items-center justify-center  text-sm">
+                            Watch now!
+                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
+                        class="w-40 h-40 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+
+                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
+                        <div class="flex items-center justify-center  text-sm">
+                            Watch now!
+                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
+                        class="w-40 h-40 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+
+                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
+                        <div class="flex items-center justify-center  text-sm">
+                            Watch now!
+                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex text-secondary-100 font-heading py-44">
+        <div class="w-[100vw] overflow-x-hidden overflow-y-auto md:text-[10rem] text-7xl">
+            <h1 class="scrollright whitespace-nowrap">--wild ideas!--wild ideas!--wild ideas!--wild ideas!--wild
+                ideas!--wild ideas!</h1>
+            <h1 class="scrollleft text-left whitespace-nowrap">--let's dive in!--let's dive in--let's dive in!--let's
+                dive in--let's dive in--</h1>
+        </div>
+    </div>
+
+    <div class="sm:px-[7%] px-[5%]">
+
+        <div class="w-full relative md:grid md:grid-cols-2">
+
+            <!-- first column -->
+            <div class="flex flex-col">
+
+                <div class="h-[50%] w-full mb-5 text-secondary-100 bg-card rounded-3xl" id="dribleft1">
+                    <img src="../assets/images/dribble/dribbble1.webp" alt="dribbble"
+                        class="w-full h-full rounded-3xl object-cover">
+                </div>
+
+                <div class="h-[50%] w-full mb-5 text-secondary-100 bg-card rounded-3xl" id="dribleft2">
+                    <img src="../assets/images/dribble/dribbble3.webp" alt="dribbble"
+                        class="w-full h-full rounded-3xl object-cover">
+                </div>
+
+                <div class="h-[50%] w-full mb-5 text-secondary-100 bg-card rounded-3xl" id="dribleft3">
+                    <img src="../assets/images/dribble/dribbble5.webp" alt="dribbble"
+                        class="w-full h-full rounded-3xl object-cover">
+                </div>
+
+            </div>
+
+            <!-- second column -->
+            <div class="flex flex-col md:ml-8 w-full justify-start">
+
+                <div class="h-[50%] w-full mb-5 text-secondary-100 bg-card rounded-3xl" id="dribright1">
+                    <img src="../assets/images/dribble/dribbble2.webp" alt="dribbble"
+                        class="w-full h-full rounded-3xl object-cover">
+                </div>
+
+                <div class="h-[50%] w-full mb-5 text-secondary-100 bg-card rounded-3xl" id="dribright2">
+                    <img src="../assets/images/dribble/dribbble4.webp" alt="dribbble"
+                        class="w-full h-full rounded-3xl object-cover">
+                </div>
+
+                <div class="h-[50%] w-full mb-5 text-secondary-100 bg-card rounded-3xl" id="dribright3">
+                    <img src="../assets/images/dribble/dribbble6.webp" alt="dribbble"
+                        class="w-full h-full rounded-3xl object-cover">
+                </div>
+
+
+            </div>
+
+            <div class="absolute w-[100%] top-1/3 flex flex-col justify-center items-center" id="dribtext">
+                <img src="../assets/images/dribble/dribbble.1a51ca99.webp" alt="Dribble">
+                <p class="w-2/3 sm:w-1/3 font-secondary text-secondary-100 my-10 text-center text-3xl ">Like a lion's
+                    roar echoing through the jungle, a hint of our creative minds emerges.</p>
+                <div
+                    class="border-secondary-200 text-base rounded-full border-2 text-secondary-200 p-4 px-12 w-fit animate-hidden delay-1000 show">
+                    View project
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full">
+            <div class=" text-secondary-100 py-10 w-full sm:text-[12rem] text-7xl font-heading h-full">
+                <p class="leading-[75%] w-full text-center"> join our <br> jungle <br> trek </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center mt-10">
+
+            <div class="sm:w-1/2 w-5/6 scalex">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-secondary text-secondary-100 text-5xl">Dribbble</h2>
+                    <img src="../assets/logos/dribble.svg" alt="dribble">
+                </div>
+
+                <div class="w-full my-10 flex justify-end items-center h-[1px] bg-secondary-100">
+                    <img src="../assets/images/line-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-5/6 scalex">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-secondary text-secondary-100 text-4xl sm:text-5xl">Linkedin</h2>
+                    <img src="../assets/logos/linkedin.svg" alt="dribble">
+                </div>
+
+                <div class="w-full my-10 flex justify-end items-center h-[1px] bg-secondary-100">
+                    <img src="../assets/images/line-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-5/6 scalex">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-secondary text-secondary-100 text-5xl">Instagram</h2>
+                    <img src="../assets/logos/instagram.svg" alt="dribble">
+                </div>
+
+                <div class="w-full my-10 flex justify-end items-center h-[1px] bg-secondary-100">
+                    <img src="../assets/images/line-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-5/6 scalex">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-secondary text-secondary-100 text-5xl">Behance</h2>
+                    <img src="../assets/logos/behance.svg" alt="dribble">
+                </div>
+
+                <div class="w-full my-10 flex justify-end items-center h-[1px] bg-secondary-100">
+                    <img src="../assets/images/line-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-5/6 scalex">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-secondary text-secondary-100 text-5xl">Facebook</h2>
+                    <img src="../assets/logos/facebook.svg" alt="dribble">
+                </div>
+
+                <div class="w-full my-10 flex justify-end items-center h-[1px] bg-secondary-100">
+                    <img src="../assets/images/line-arrow.svg" alt="arrow">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:mt-64 mt-32 justify-between flex items-end">
+            <div class="text-secondary-100 font-heading sm:text-[12rem] text-7xl leading-[75%] w-2/3">
+                time to roar!
+            </div>
+
+            <div>
+                <div class="delaychildren relative font-sans animate-hidden delayed">
+                    <div class="border-secondary-200 text-base rounded-full border-2 bg-secondary-200 w-fit
+                    sm:p-4 sm:px-12 px-5 p-2">
+                        Let's talk!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-40">
+            <div class="w-full my-10 flex justify-end items-center h-[1px] bg-secondary-100">
+                <img src="../assets/images/line-arrow.svg" alt="arrow">
+            </div>
+            <div class="flex justify-between items-center text-secondary-100">
+                <div class="flex flex-col flex-grow sm:flex-grow-0 sm:flex-row w-5/12 justify-between">
+
+                    <div>
+                        <p>Email</p>
+                        <p class="text-2xl">hello@trionn.com</p>
+                    </div>
+
+                    <div class="mt-5 sm:mt-0">
+                        <p>Call</p>
+                        <p class="text-2xl">+91 98241 82099</p>
+                    </div>
+
+                </div>
+
+                <div class="text-right">
+                    <p>Skype</p>
+                    <p class="text-2xl">talk.trionn</p>
+                </div>
+
+            </div>
+
+            <div class="w-full my-10 flex justify-end items-center h-[1px] bg-secondary-100">
+                <img src="../assets/images/line-arrow.svg" alt="arrow">
+            </div>
+        </div>
+
+        <div class="mt-20 w-full flex justify-between items-center text-secondary-100">
+            <div class="font-sans text-opacity-60 text-[#808080]">2024 TRIONN</div>
+            <div> <img src="../assets/move-top.650752b8.svg" alt=""> </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+
+    <script>
+
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: dirtyline;
+  src: url("../assets/fonts/Dirtyline\ 36daysoftype\ 2022.otf") format("opentype");
+}
+
+@font-face {
+  font-family: syne;
+  src: url('../assets/fonts/Syne-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: dmmono;
+  src: url('../assets/fonts/DMMono-Regular.ttf') format("truetype");
+}

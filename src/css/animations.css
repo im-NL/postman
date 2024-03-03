@@ -1,0 +1,135 @@
+/* ignore this, just for setting scrollbar colour */
+* {
+    scrollbar-color: #1e1f22 transparent;
+    scrollbar-width: thin;
+}
+
+
+/* actual animation properties */
+.animate-hidden {
+    opacity: 0;
+    transition: all 0.5s;
+    filter: blur(10px);
+    transform: translateY(50%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.delayed:nth-child(1) {
+    transition-delay: 0.3s;
+}
+.delayed:nth-child(2) {
+    transition-delay: 0.5s;
+}
+.delayed:nth-child(3) {
+    transition-delay: 0.7s;
+}
+.delayed:nth-child(4) {
+    transition-delay: 0.9s;
+}
+
+.redhover:hover {
+    background-color: rgba(221,53,0,.9);
+}
+.redhover {
+    transition: all 0.5s;
+}
+
+.whitehover:hover {
+    transition: all 0.5s;
+    color: #1e1f22;
+    background-color: rgba(220,229,229,.9);
+}
+
+.greenhover:hover {
+    transition: all 0.5s;
+    color: #1e1f22;
+
+    background-color: rgba(176,221,202,.9);
+}
+
+.greenhover {
+    transition: all 0.5s;
+}
+
+.yellowhover:hover {
+    color: #1e1f22;
+    transition: all 0.5s;
+    background-color: rgba(176,221,202,.9);
+}
+
+.yellowhover {
+    transition: all 0.5s;
+}
+
+
+.scalex:hover {
+    width: 65vw;
+}
+.scalex {
+    transition: all 0.75s;
+}
+
+.scrollleft {
+    animation: move-rtl 10s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.scrollright {
+    animation: move-ltl 20s linear infinite;
+}
+
+@keyframes move-ltl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.snapper {
+    scroll-snap-type: x mandatory;
+}
+
+.snapper > div {
+    scroll-snap-align: start;
+    transition: all 0.5s;
+}
+
+.snapper > div:hover {
+    background-color: #17181b;  
+    border:#17181b;
+}
+
+.hamburger-text:hover {
+    color: #1e1f22;
+    background-color: #d8d8d8;
+    animation: move-r 0.5s;
+    transform: translateX(40px);
+}
+
+.hamburger-text {
+    transition: all 0.5s;
+}
+
+@keyframes move-r {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(40px);
+    }
+}
