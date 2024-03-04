@@ -10,12 +10,13 @@
     <script defer src="./js/animations.js"></script>
     <script defer src="./js/scrollanimations.js"></script>
     <script defer src="./js/hamburger.js"></script>
+    <script defer src="./js/dragging.js"></script>
 </head>
 
 <body class="bg-back overflow-x-hidden overflow-y-auto">
-
-    <div id="hamburger-content" class="hidden justify-center items-center w-full h-[100vh]">
-            
+    
+    <div id="hamburger-content" class="fixed hidden justify-center z-10 items-center animate-hidden bg-back w-[100vw] h-[100vh]">
+        <div class="flex justify-center items-center w-full h-[100vh]">
         <div class="flex flex-col sm:flex-row w-2/3 sm:items-end sm:justify-between sm:11/12 text-secondary-100">
             <div class="md:text-8xl text-5xl font-heading">
                 <h1 class="text-primary-100 hamburger-text">work</h1>
@@ -43,6 +44,7 @@
             </div>
 
         </div>
+    </div>
     
     </div>
 
@@ -53,7 +55,7 @@
 
         <div class="flex fixed h-20 top-0 left-0 w-full justify-center items-center text-secondary-100">
             <div> <img src="../assets/light-mode-icon.035572eb.svg" alt="light"> </div>
-            <div> <img src="../assets/sound-mute.99b17403.svg" alt="soud" class="h-6 w-6 bg-card"> </div>
+            <div> <img src="../assets/sound-mute.99b17403.svg" alt="soud" class="h-8 w-8 rounded-full backg"> </div>
         </div>
 
         <div class="flex justify-end items-center text-secondary-100 text-xl
@@ -84,7 +86,7 @@
                 tech development to companies.
             </div>
             <div class="flex justify-center pt-8">
-                <a class="animate-hidden">
+                <a class="animate-hidden" href="#video">
                     <img src="https://trionn.com/_next/static/media/move-down.31fd25f2.svg" class="opacity-35"
                         alt="move-down" width="30px" height="30px">
                 </a>
@@ -112,7 +114,7 @@
         </div>
 
         <!-- VIDEO -->
-        <div class="flex my-16 justify-center border rounded-full scaleup">
+        <div class="flex my-16 justify-center border rounded-full scaleup" id="#video">
             <video width="100%" height="100%" loop playsinline autoplay muted class="rounded-3xl">
                 <source src="../assets/videos/intro-video.mp4" type="video/mp4">
             </video>
@@ -366,10 +368,27 @@
 
 
     <!-- REVIEWS -->
-    <div class="w-full whitespace-nowrap overflow-scroll">
+    <div class="w-full whitespace-nowrap overflow-scroll" id="container">
 
         <div class="pl-5 snapper min-w-max flex">
             <!-- card -->
+            <div class="h-[72vh] w-[400px] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="../assets/testimonials/malte-kramer.webp" alt="doug-petrie"
+                        class="w-40 h-40 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Malte Kramer</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Luxury Presence</p>
+
+                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
+                        <div class="flex items-center justify-center  text-sm">
+                            Watch now!
+                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="h-[72vh] w-[400px] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
                     border-2 border-secondary-100">
                 <div class="flex flex-col justify-center items-center">
@@ -386,14 +405,13 @@
                     </div>
                 </div>
             </div>
-
-            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
+            <div class="h-[72vh] w-[400px] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
                     border-2 border-secondary-100">
                 <div class="flex flex-col justify-center items-center">
-                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
+                    <img src="../assets/testimonials/zoltan-csonka.webp" alt="doug-petrie"
                         class="w-40 h-40 text-center rounded-full">
-                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
-                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+                    <h3 class="font-secondary text-2xl mt-10">Zoltan Csonka</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Ventigence</p>
 
                     <div class="bg-red  rounded-full mt-5 px-12 py-5">
                         <div class="flex items-center justify-center  text-sm">
@@ -403,71 +421,39 @@
                     </div>
                 </div>
             </div>
-            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
-                    border-2 border-secondary-100">
-                <div class="flex flex-col justify-center items-center">
-                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
-                        class="w-40 h-40 text-center rounded-full">
-                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
-                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+            <div class="h-[72vh] w-[400px] md:w-[28vw] mr-5 flex justify-between flex-col items-center rounded-3xl text-secondary-100
+                    border-2 border-secondary-100 font-secondary">
 
-                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
-                        <div class="flex items-center justify-center  text-sm">
-                            Watch now!
-                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
-                        </div>
-                    </div>
+                <div class="flex flex-col text-center relative mt-20 w-full h-full">
+                    <h1 class="text-8xl leading-3">"</h1>
+                    <p class="h-full text-wrap text-xl mx-6">We had a fantastic experience partnering with Trionn for our website. The communication and collaboration were excellent, resulting in a top-notch design and functionality. We highly recommend Trionn to businesses in the service sector or anyone in need of a web design & development solution.</p>
                 </div>
-            </div>
-            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
-                    border-2 border-secondary-100">
-                <div class="flex flex-col justify-center items-center">
-                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
-                        class="w-40 h-40 text-center rounded-full">
-                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
-                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
-
-                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
-                        <div class="flex items-center justify-center  text-sm">
-                            Watch now!
-                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
-                    border-2 border-secondary-100">
-                <div class="flex flex-col justify-center items-center">
-                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
-                        class="w-40 h-40 text-center rounded-full">
-                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
-                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
-
-                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
-                        <div class="flex items-center justify-center  text-sm">
-                            Watch now!
-                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
-                        </div>
-                    </div>
+                
+                <div class="flex flex-col mb-10 justify-center items-center">
+                    <img src="../assets/testimonials/albert-mizuno.webp" alt="doug-petrie"
+                        class="w-20 h-20 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Albert Mizuno</h3>
+                    <p class="text-sm font-extralight">Founder of The Mizuno</p>
                 </div>
             </div>
 
-            <div class="h-[72vh] w-[90%] md:w-[28vw] mr-5 flex justify-center items-center rounded-3xl text-secondary-100
-                    border-2 border-secondary-100">
-                <div class="flex flex-col justify-center items-center">
-                    <img src="../assets/images/doug-petrie.webp" alt="doug-petrie"
-                        class="w-40 h-40 text-center rounded-full">
-                    <h3 class="font-secondary text-2xl mt-10">Doug Petrie</h3>
-                    <p class="text-sm font-extralight">Founder & CEO of Fast Resume</p>
+            <div class="h-[72vh] w-[400px] md:w-[28vw] mr-5 flex justify-between flex-col items-center rounded-3xl text-secondary-100
+                border-2 border-secondary-100 font-secondary">
 
-                    <div class="bg-red  rounded-full mt-5 px-12 py-5">
-                        <div class="flex items-center justify-center  text-sm">
-                            Watch now!
-                            <img src="../assets/images/play.6bd15bb3.svg" alt="play" class="ml-3 h-2 w-2">
-                        </div>
-                    </div>
+                <div class="flex flex-col text-center relative mt-20 w-full h-full">
+                    <h1 class="text-8xl leading-3">"</h1>
+                    <p class="h-full text-wrap text-xl mx-6">The Trionn team is extremely reliable, professional and talented. It has been a great pleasure collaborating with them over many months.</p>
                 </div>
+                
+                <div class="flex flex-col mb-10 justify-center items-center">
+                    <img src="../assets/testimonials/stephen-dash.webp" alt="doug-petrie"
+                        class="w-20 h-20 text-center rounded-full">
+                    <h3 class="font-secondary text-2xl mt-10">Stephen Dash</h3>
+                    <p class="text-sm font-extralight">Founder & CEO of Credible</p>
+                </div>
+
             </div>
+
         </div>
     </div>
 
@@ -646,7 +632,7 @@
 
         <div class="mt-20 w-full flex justify-between items-center text-secondary-100">
             <div class="font-sans text-opacity-60 text-[#808080]">2024 TRIONN</div>
-            <div> <img src="../assets/move-top.650752b8.svg" alt=""> </div>
+            <a href="#"> <img src="../assets/move-top.650752b8.svg" alt=""> </a>
         </div>
 
     </div>

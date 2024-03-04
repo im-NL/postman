@@ -59,7 +59,7 @@
 .yellowhover:hover {
     color: #1e1f22;
     transition: all 0.5s;
-    background-color: rgba(176,221,202,.9);
+    background-color: rgba(244,227,66,.9);
 }
 
 .yellowhover {
@@ -132,4 +132,8 @@
     100% {
         transform: translateX(40px);
     }
+}
+
+.backg {
+    background-color: rgba(217, 217, 217, 0.1);
 }
