@@ -150,8 +150,13 @@ let tl7 = gsap.timeline({
 }})
 
 tl7.from('.scaleup', {
-    y: -650,
+    yPercent: -70,
     scale: 0.2,
+})
+
+tl7.to('.scaleup', {
+    yPercent: 0,
+    scale:1,
 })
 
 
